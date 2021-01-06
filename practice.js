@@ -50,7 +50,7 @@ function greeting(name){
 
 //Code Here
 const newGreeting = function(name){
-  return 'Hello ' + name
+  return 'Hello, ' + name
 }
 
 //console.log(newGreeting('Wade'))
@@ -144,7 +144,7 @@ var mathSum = add(3, 4)
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
 // Code here
-function favoriteColorFinder(color) {
+function faveColorFinder(color) {
   if (color === 'red') {
     return 'red is a great color'
   } else if (color === 'green') {
@@ -156,10 +156,10 @@ function favoriteColorFinder(color) {
   }
 }
 
-// console.log(favoriteColorFinder('red'))
-// console.log(favoriteColorFinder('green'))
-// console.log(favoriteColorFinder('black'))
-// console.log(favoriteColorFinder(''))
+// console.log(faveColorFinder('red'))
+// console.log(faveColorFinder('green'))
+// console.log(faveColorFinder('black'))
+// console.log(faveColorFinder(''))
 
 
 
@@ -201,15 +201,15 @@ let pondScope = ["duck", "realDuck"]
 //Create a variable called age with your age assigned to you
 
 // Code Here
-var myAge = 28
+let age = 28
 // FLASH FORWARD TO NEXT YEAR
 // reassign the value of age to be one greater than it was, because, we all get older
 
 // Code Here
-var myAge = 29
+age = 29
 // Good news! We can live forever. Set your age to 999
 
 // Code Here
-var myAge = 999
+age = 999
 
 //console.log('My age is ' + myAge)
