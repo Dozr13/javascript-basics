@@ -27,7 +27,7 @@ var greatestFear = undefined;
 //Create a variable called devMountainGoal that is null because we are just starting out
 
 //Code here
-
+var devMountainGoal = null;
 //////////////////PROBLEM 6////////////////////
 
 //Create a function declaration called greeting that
@@ -36,21 +36,29 @@ var greatestFear = undefined;
 //plus the value of the name parameter.
 
 //Code here
+function greeting(name){
+  return 'Hello, ' + name;
+  };
 
+greeting('Wade');
 //////////////////PROBLEM 7////////////////////
 
 //Write a function expression called newGreeting.
 //Give it the same functionality as the function greeting in Problem 6.
 
 //Code Here
+greeting = function(name){
+  return 'Hello ' + name;
+};
 
+greeting('Wade');
 //////////////////PROBLEM 8////////////////////
 
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
 //Code Here
-
+var groceries = ['apples', 'milk', 'eggs', 'bread'];
 //////////////////PROBLEM 9////////////////////
 
 //Create an object saved to the variable dog.
@@ -59,12 +67,17 @@ var greatestFear = undefined;
 //and goodBoy (a boolean).
 
 //Code Here
-
+var dog = {
+  name: "Banjo",
+  color: "Orange",
+  age: 347,
+  goodBoy: true //occasionally 
+}
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
 //Code Here
-
+var devMountainClassPet = dog.name;
 //////////////////PROBLEM 10////////////////////
 
 //Write a function called nameCheck that takes in a name parameter.
@@ -75,7 +88,17 @@ var greatestFear = undefined;
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
 // Code here
+function nameCheck(name) {
+  if (name == 'Steven'){ 
+    return 'What is up Steven?'
+   } else if (name == 'Bryan'){
+    return 'Hey Bryan!'
+    } else {
+    return 'Cool name, ' + name
+    };
+};
 
+nameCheck('Steven');
 //////////////////PROBLEM 11////////////////////
 
 // Create a function called add that takes in two parameters
@@ -83,12 +106,16 @@ var greatestFear = undefined;
 // The add function should return the two parameters added together
 
 //Code Here
+function add(num1, num2) {
+  return num1 + num2;
+};
 
+add(1, 2);
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
 //Code Here
-
+var mathSum = add(3, 4);
 //////////////////PROBLEM 12////////////////////
 
 //Write a function called faveColorFinder that takes in one parameter called color
@@ -99,7 +126,15 @@ var greatestFear = undefined;
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
 // Code here
-
+function favoriteColorFinder(color) {
+  if (color == 'red') {
+    return 'red is a great color'
+  } else if (color == 'green') {
+    return 'green is a solid favorite color'
+  } else (color == 'black') {
+    return 'so trendy'
+  } 
+};
 //////////////////PROBLEM 13////////////////////
 
 let duck = "cute";
@@ -122,28 +157,31 @@ function pond() {
 //as strings.
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathroomScope = ["duck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathtubScope = ["duck", "sailorDuck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let pondScope = ["duck", "realDuck"];
 
 //////////////////PROBLEM 14////////////////////
 
 //Create a variable called age with your age assigned to you
 
 // Code Here
-
+var myAge = 28
 // FLASH FORWARD TO NEXT YEAR
 // reassign the value of age to be one greater than it was, because, we all get older
 
 // Code Here
-
+var myAge = 29
 // Good news! We can live forever. Set your age to 999
 
 // Code Here
+var myAge = 999
+
+console.log('My age is ' + myAge)
